@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Calendar</title>
+    <link rel="stylesheet" href="file.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <header>
+            <button id="prev-week">←</button>
+            <span id="month-year"></span>
+            <button id="next-week">→</button>
+        </header>
+        <div class="calendar">
+            <div class="time-column">
+                <!-- Time slots from 8 AM to 11 PM -->
+                <div class="time-slot">8 AM</div>
+                <div class="time-slot">9 AM</div>
+                <div class="time-slot">10 AM</div>
+                <div class="time-slot">11 AM</div>
+                <div class="time-slot">12 PM</div>
+                <div class="time-slot">1 PM</div>
+                <div class="time-slot">2 PM</div>
+                <div class="time-slot">3 PM</div>
+                <div class="time-slot">4 PM</div>
+                <div class="time-slot">5 PM</div>
+                <div class="time-slot">6 PM</div>
+                <div class="time-slot">7 PM</div>
+                <div class="time-slot">8 PM</div>
+                <div class="time-slot">9 PM</div>
+                <div class="time-slot">10 PM</div>
+                <div class="time-slot">11 PM</div>
+            </div>
+            <div class="days-container">
+                <div class="days-row">
+                    <div class="day-header" data-day="0">Sunday</div>
+                    <div class="day-header" data-day="1">Monday</div>
+                    <div class="day-header" data-day="2">Tuesday</div>
+                    <div class="day-header" data-day="3">Wednesday</div>
+                    <div class="day-header" data-day="4">Thursday</div>
+                    <div class="day-header" data-day="5">Friday</div>
+                    <div class="day-header" data-day="6">Saturday</div>
+                </div>
+                <div class="time-slots">
+                    <div class="day-column" data-day="0"></div>
+                    <div class="day-column" data-day="1"></div>
+                    <div class="day-column" data-day="2"></div>
+                    <div class="day-column" data-day="3"></div>
+                    <div class="day-column" data-day="4"></div>
+                    <div class="day-column" data-day="5"></div>
+                    <div class="day-column" data-day="6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Event</h2>
+            <form id="event-form">
+                <label for="event-title">Title:</label>
+                <input type="text" id="event-title" name="event-title" required>
+                <label for="event-location">Location:</label>
+                <input type="text" id="event-location" name="event-location">
+                <button type="submit">Save</button>
+                <button type="button" id="delete-event">Delete</button>
+            </form>
+        </div>
+    </div>
+    <script src="fil.js"></script>
+</body>
+</html>
